@@ -13,8 +13,10 @@ if __name__ == '__main__':
     primes = [2, 3]
 
     for i in range(6, big_number, 6):
+
         if is_prime(i-1):
             primes.append(i-1)
+
         if is_prime(i+1):
             primes.append(i+1)
 
