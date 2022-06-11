@@ -4,7 +4,7 @@ https://projecteuler.net/problem=10
 
 """
 
-from euler_problem_3 import is_prime
+from euler_problem_003 import is_prime
 
 if __name__ == '__main__':
 
