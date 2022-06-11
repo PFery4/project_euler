@@ -4,10 +4,11 @@ https://projecteuler.net/problem=15
 
 """
 
+
 def factorial(n):
     product = 1
     for i in range(n, 0, -1):
-	product *= i
+        product *= i
     return product
 
 
