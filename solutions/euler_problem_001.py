@@ -5,7 +5,6 @@ https://projecteuler.net/problem=1
 """
 
 
-
 if __name__ == '__main__':
 
     sum_multiples = 0

@@ -18,5 +18,5 @@ def n_choose_k(n, k):
 
 if __name__ == '__main__':
     # equivalent to the number of possible sequences of 40 coin tosses with exactly 20 heads and 20 tails
-    print(n_choose_k(40, 20))
+    print(int(n_choose_k(40, 20)))
 
