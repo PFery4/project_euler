@@ -5,24 +5,18 @@ https://projecteuler.net/problem=30
 """
 
 
-def sum_fifth_power_digits(n):
-    return sum([int(i)**4 for i in str(n)])
+def sum_power_digits(n, exp=5):
+    return sum([int(i)**exp for i in str(n)])
 
 
 if __name__ == '__main__':
 
-    list_sm = []
+    nums = []
 
-    i = 2
-    sm = sum_fifth_power_digits(i)
-    while sm >= i:
+    # stopping condition is set to 1000000 because sum_power_digits(999999) < 999999
+    for i in range(10, 1000000):
 
-        if sm == i:
-            list_sm.append(sm)
+        if i == sum_power_digits(i):
+            nums.append(i)
 
-        sm = sum_fifth_power_digits(i)
-
-        print(i, sm, sm >= i)
-        i+=1
-
-    print(sum(list_sm))
+    print(sum(nums))
