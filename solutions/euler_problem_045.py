@@ -19,14 +19,31 @@ def hexagonal_number(n):
 
 if __name__ == '__main__':
 
-    n_h = 143
+    n_t = 285
     n_p = 165
-    n_t = 286
+    n_h = 144
 
-    TPN = [triangle_number(n_t), pentagonal_number(n_p), hexagonal_number(n_h)]
-    print(TPN)
-    print(len(set(TPN)))
+    T = triangle_number(n_t)
+    P = pentagonal_number(n_p)
+    H = hexagonal_number(n_h)
 
+    while len({T, P, H}) != 1:
+        while len({P, H}) != 1:
+            if P < H:
+                n_p += 1
+                P = pentagonal_number(n_p)
+            elif H < P:
+                n_h += 1
+                H = hexagonal_number(n_h)
+        if T < P:
+            n_t += 1
+            T = triangle_number(n_t)
+        elif P < T:
+            n_p += 1
+            P = pentagonal_number(n_p)
 
+    assert T == P == H
+
+    print(T)
 
 
