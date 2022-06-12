@@ -14,12 +14,9 @@ def find_divisors(n):
     i = 1
     while i <= n**0.5:
         if n % i == 0:
-            if n / i == i:
-                divisors.append(i)
-            else:
-                divisors.extend([i, n//i])
+            divisors.extend([i, n//i])
         i += 1
-    return divisors
+    return sorted(list(dict.fromkeys(divisors)))
 
 
 if __name__ == '__main__':
