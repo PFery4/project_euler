@@ -7,22 +7,20 @@ https://projecteuler.net/problem=26
 
 def decimal_representation(n, d):
     div, remainder = divmod(n, d)
-
     first_div = str(div) + '.'
 
     decimals = ''
+    remainders = [remainder]
     index = None
 
     while remainder != 0:
         remainder *= 10
-        while remainder < d:
-            remainder *= 10
-            decimals += '0'
         div, remainder = divmod(remainder, d)
-        if str(div) in decimals:
-            index = decimals.index(str(div))
-            break
         decimals += str(div)
+        if remainder in remainders:
+            index = remainders.index(remainder)
+            break
+        remainders.append(remainder)
 
     if index is not None:
         decimals = decimals[:index] + "(" + decimals[index:] + ")"
@@ -30,8 +28,21 @@ def decimal_representation(n, d):
     return first_div + decimals
 
 
+def length_repeat(decimal_rep):
+    if "(" not in decimal_rep:
+        return 0
+    return len(decimal_rep) - decimal_rep.index('(') - 2
+
+
 if __name__ == '__main__':
 
-    for i in range(1,500):
-        print(decimal_representation(1, i))
+    value_of_d = 0
+    longest_repeat = 0
 
+    for d in range(1, 1000):
+        decimal = decimal_representation(1, d)
+        if length_repeat(decimal) > longest_repeat:
+            longest_repeat = length_repeat(decimal)
+            value_of_d = d
+
+    print(value_of_d)
