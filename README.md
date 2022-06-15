@@ -1,1 +1,3 @@
-This repository contains my answers to problems from [Project Euler](https://projecteuler.net/).
+This repository contains my answers to problems from [Project Euler](https://projecteuler.net/). My code is in no way supposed to be the most optimal. I try to work on the problems on my own, sometime I look for inspiration / approaches if I really get stuck. Once my code works, I move onto the next problem, I don't plan on taking time to optimise it / make it work faster.
+
+Feel free to have a look, or blatantly steal anything from here.
