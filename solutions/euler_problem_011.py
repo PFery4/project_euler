@@ -2,6 +2,9 @@
 
 https://projecteuler.net/problem=11
 
+Instructions:
+Copy the grid, as it is presented in the problem, into a file in the 'gitignored' folder, called 'problem_11_grid.txt'
+
 """
 
 

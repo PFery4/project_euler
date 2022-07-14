@@ -2,6 +2,9 @@
 
 https://projecteuler.net/problem=8
 
+Instructions:
+Copy the 1000 digit number, the same way it is presented, into a file in the 'gitignored' folder. This file should be named 'problem_8_number.txt'
+
 """
 
 if __name__ == '__main__':
