@@ -4,8 +4,8 @@ https://projecteuler.net/problem=28
 
 """
 
-if __name__ == '__main__':
 
+def main():
     in_diag = [1]
 
     edge_length = 2
@@ -17,4 +17,8 @@ if __name__ == '__main__':
             in_diag.append(n)
         edge_length += 2
 
-    print(sum(in_diag))
+    return sum(in_diag)
+
+
+if __name__ == '__main__':
+    print(main())

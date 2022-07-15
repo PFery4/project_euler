@@ -34,8 +34,7 @@ def length_repeat(decimal_rep):
     return len(decimal_rep) - decimal_rep.index('(') - 2
 
 
-if __name__ == '__main__':
-
+def main():
     value_of_d = 0
     longest_repeat = 0
 
@@ -45,4 +44,8 @@ if __name__ == '__main__':
             longest_repeat = length_repeat(decimal)
             value_of_d = d
 
-    print(value_of_d)
+    return value_of_d
+
+
+if __name__ == '__main__':
+    print(main())

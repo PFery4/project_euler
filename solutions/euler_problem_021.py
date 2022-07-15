@@ -22,8 +22,7 @@ def amicable_pair(number):
     return set(result)
 
 
-if __name__ == '__main__':
-
+def main():
     allpairs = amicable_pair(10000)
 
     total = 0
@@ -31,4 +30,8 @@ if __name__ == '__main__':
     for tupl in allpairs:
         total += sum(tupl)
 
-    print(total)
+    return total
+
+
+if __name__ == '__main__':
+    print(main())

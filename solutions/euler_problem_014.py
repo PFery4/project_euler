@@ -11,8 +11,7 @@ def next_collatz(n):
     return 3 * n + 1
 
 
-if __name__ == '__main__':
-
+def main():
     starting_number = 13
     sequence = [starting_number]
 
@@ -30,4 +29,8 @@ if __name__ == '__main__':
             longest_sequence = sequence
             longest_starting_number = i
 
-    print(longest_starting_number)
+    return longest_starting_number
+
+
+if __name__ == '__main__':
+    print(main())

@@ -4,8 +4,8 @@ https://projecteuler.net/problem=25
 
 """
 
-if __name__ == '__main__':
 
+def main():
     f_prev = 1
     f_curr = 1
 
@@ -17,4 +17,8 @@ if __name__ == '__main__':
         f_curr = f_next
         i_curr += 1
 
-    print(i_curr)
+    return i_curr
+
+
+if __name__ == '__main__':
+    print(main())

@@ -9,8 +9,7 @@ def sum_power_digits(n, exp=5):
     return sum([int(i)**exp for i in str(n)])
 
 
-if __name__ == '__main__':
-
+def main():
     nums = []
 
     # stopping condition is set to 1000000 because sum_power_digits(999999) < 999999
@@ -19,4 +18,8 @@ if __name__ == '__main__':
         if i == sum_power_digits(i):
             nums.append(i)
 
-    print(sum(nums))
+    return sum(nums)
+
+
+if __name__ == '__main__':
+    print(main())

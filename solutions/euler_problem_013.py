@@ -7,11 +7,15 @@ copy-paste the numbers into a file called 'problem_13_lines.txt' inside the 'git
 
 """
 
-if __name__ == '__main__':
 
+def main():
     with open('../gitignored/problem_13_lines.txt') as file:
         lines = file.readlines()
 
     lines = [int(line.replace("\n", "")) for line in lines]
 
-    print(str(sum(lines))[:10])
+    return str(sum(lines))[:10]
+
+
+if __name__ == '__main__':
+    print(main())

@@ -6,11 +6,11 @@ https://projecteuler.net/problem=7
 
 from euler_problem_003 import is_prime
 
-if __name__ == '__main__':
 
+def main():
     primes_list = [2, 3]
 
-    center_candidate = 0            # primes are 1 apart from center_candidate
+    center_candidate = 0  # primes are 1 apart from center_candidate
 
     while len(primes_list) < 10001:
 
@@ -22,4 +22,8 @@ if __name__ == '__main__':
 
         center_candidate += 6
 
-    print(primes_list[-1])
+    return primes_list[-1]
+
+
+if __name__ == '__main__':
+    print(main())

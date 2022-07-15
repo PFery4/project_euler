@@ -9,8 +9,7 @@ def is_palindrome(n):
     return str(n) == str(n)[::-1]
 
 
-if __name__ == '__main__':
-
+def main():
     number_1 = 999
 
     largest_palindrome = 0
@@ -24,4 +23,8 @@ if __name__ == '__main__':
             number_2 -= 1
         number_1 -= 1
 
-    print(largest_palindrome)
+    return largest_palindrome
+
+
+if __name__ == '__main__':
+    print(main())

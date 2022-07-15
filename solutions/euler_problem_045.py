@@ -17,8 +17,7 @@ def hexagonal_number(n):
     return int(n*(2*n-1))
 
 
-if __name__ == '__main__':
-
+def main():
     n_t = 285
     n_p = 165
     n_h = 144
@@ -44,6 +43,8 @@ if __name__ == '__main__':
 
     assert T == P == H
 
-    print(T)
+    return T
 
 
+if __name__ == '__main__':
+    print(main())

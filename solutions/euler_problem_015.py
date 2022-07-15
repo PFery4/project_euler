@@ -16,7 +16,11 @@ def n_choose_k(n, k):
     return (factorial(n)) / (factorial(k) * factorial(n-k))
 
 
-if __name__ == '__main__':
+def main():
     # equivalent to the number of possible sequences of 40 coin tosses with exactly 20 heads and 20 tails
-    print(int(n_choose_k(40, 20)))
+    return int(n_choose_k(40, 20))
+
+
+if __name__ == '__main__':
+    print(main())
 

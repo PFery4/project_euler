@@ -5,8 +5,7 @@ https://projecteuler.net/problem=2
 """
 
 
-if __name__ == '__main__':
-
+def main():
     sum_even_fibonacci = 2
 
     fibo_prev = 1
@@ -22,5 +21,8 @@ if __name__ == '__main__':
         if fibo_next % 2 == 0:
             sum_even_fibonacci += fibo_next
 
-    print(sum_even_fibonacci)
+    return sum_even_fibonacci
 
+
+if __name__ == '__main__':
+    print(main())

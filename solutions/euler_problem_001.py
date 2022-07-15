@@ -5,8 +5,7 @@ https://projecteuler.net/problem=1
 """
 
 
-if __name__ == '__main__':
-
+def main():
     sum_multiples = 0
 
     candidate_number = 1
@@ -17,6 +16,8 @@ if __name__ == '__main__':
 
         candidate_number += 1
 
-    print(sum_multiples)
+    return sum_multiples
 
 
+if __name__ == '__main__':
+    print(main())

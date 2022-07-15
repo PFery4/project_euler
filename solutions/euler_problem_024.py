@@ -20,10 +20,11 @@ def str_permutations(string):
     return l
 
 
-if __name__ == '__main__':
-
+def main():
     for i, p in enumerate(str_permutations('0123456789')):
         if i == 999_999:
-            print(p)
+            return p
 
 
+if __name__ == '__main__':
+    print(main())

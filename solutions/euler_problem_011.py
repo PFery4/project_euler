@@ -15,8 +15,7 @@ def product(num_list):
     return prod
 
 
-if __name__ == '__main__':
-
+def main():
     with open('../gitignored/problem_11_grid.txt') as file:
         grid = file.readlines()
 
@@ -66,4 +65,8 @@ if __name__ == '__main__':
             if product(forward_diag) > greatest_product:
                 greatest_product = product(forward_diag)
 
-    print(greatest_product)
+    return greatest_product
+
+
+if __name__ == '__main__':
+    print(main())

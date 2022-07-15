@@ -12,8 +12,7 @@ def is_abundant(n):
     return sum(divisors[:-1]) > n
 
 
-if __name__ == '__main__':
-
+def main():
     abundants = []
 
     for i in range(1, 28124):
@@ -34,4 +33,8 @@ if __name__ == '__main__':
         if i not in sum_2_abundants:
             non_sum_2_abundants.append(i)
 
-    print(sum(non_sum_2_abundants))
+    return sum(non_sum_2_abundants)
+
+
+if __name__ == '__main__':
+    print(main())

@@ -7,8 +7,8 @@ save the 'names.txt' file in the 'gitignored' folder.
 
 """
 
-if __name__ == '__main__':
 
+def main():
     with open('../gitignored/p022_names.txt') as file:
         names = file.readline()
 
@@ -25,5 +25,8 @@ if __name__ == '__main__':
         score = (position + 1) * value
         total += score
 
-    print(total)
+    return total
 
+
+if __name__ == '__main__':
+    print(main())

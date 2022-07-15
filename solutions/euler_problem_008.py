@@ -7,8 +7,8 @@ Copy the 1000 digit number, the same way it is presented, into a file in the 'gi
 
 """
 
-if __name__ == '__main__':
 
+def main():
     with open('../gitignored/problem_8_number.txt') as file:
         lines = file.readlines()
 
@@ -30,4 +30,8 @@ if __name__ == '__main__':
         if number > greatest_product:
             greatest_product = number
 
-    print(greatest_product)
+    return greatest_product
+
+
+if __name__ == '__main__':
+    print(main())

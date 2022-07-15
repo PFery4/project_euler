@@ -9,8 +9,7 @@ def is_pythagorean_triplet(a, b, c):
     return a * a + b * b == c * c
 
 
-if __name__ == '__main__':
-
+def main():
     a = 1
     b = 2
     c = 997
@@ -30,5 +29,10 @@ if __name__ == '__main__':
             if is_pythagorean_triplet(a, b, c):
                 break
 
-    print(a * b * c)
+    return a * b * c
+
+
+if __name__ == '__main__':
+
+    print(main())
 

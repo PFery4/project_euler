@@ -6,11 +6,15 @@ https://projecteuler.net/problem=20
 
 from euler_problem_015 import factorial
 
-if __name__ == '__main__':
 
+def main():
     total = 0
 
     for digit in (str(factorial(100))):
         total += int(digit)
 
-    print(total)
+    return total
+
+
+if __name__ == '__main__':
+    print(main())

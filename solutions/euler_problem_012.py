@@ -19,12 +19,15 @@ def find_divisors(n):
     return sorted(list(dict.fromkeys(divisors)))
 
 
-if __name__ == '__main__':
-
+def main():
     num = 1
     triang = triangle_number(num)
     while len(find_divisors(triang)) < 500:
         num += 1
         triang = triangle_number(num)
 
-    print(triang)
+    return triang
+
+
+if __name__ == '__main__':
+    print(main())

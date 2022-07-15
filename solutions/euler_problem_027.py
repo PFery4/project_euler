@@ -11,9 +11,8 @@ def quadratic(a, b, n):
     return n*n + a*n + b
 
 
-if __name__ == '__main__':
-
-    #b must be prime
+def main():
+    # b must be prime
     b_list = []
     center_candidate = 0
     while center_candidate < 1000:
@@ -36,4 +35,8 @@ if __name__ == '__main__':
                 longest_streak_consecutive_primes = n
                 ab = a * b
 
-    print(ab)
+    return ab
+
+
+if __name__ == '__main__':
+    print(main())

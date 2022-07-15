@@ -65,8 +65,7 @@ def print_sudoku_grid(grid):
         print(str_line)
 
 
-if __name__ == '__main__':
-
+def main():
     with open('../gitignored/p096_sudoku.txt') as file:
         lines = file.readlines()
 
@@ -76,7 +75,8 @@ if __name__ == '__main__':
     grid = make_sudoku_grid(lines[:10])
 
     print_sudoku_grid(grid)
-    grid = solve_sudoku(grid)
+    return
 
-    print()
-    print_sudoku_grid(grid)
+
+if __name__ == '__main__':
+    print(main())

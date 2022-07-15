@@ -20,18 +20,21 @@ def is_prime(n):
     return True
 
 
-if __name__ == '__main__':
-
+def main():
     target_number = 600851475143
 
     candidate = 5
     highest_prime = 5
 
-    while candidate < target_number**0.5:
+    while candidate < target_number ** 0.5:
 
         if is_prime(candidate) and target_number % candidate == 0:
             highest_prime = candidate
 
         candidate += 6
 
-    print(highest_prime)
+    return highest_prime
+
+
+if __name__ == '__main__':
+    print(main())

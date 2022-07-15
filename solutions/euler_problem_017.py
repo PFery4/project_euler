@@ -39,13 +39,14 @@ def n2w(n):
                        number_to_word[separate_number(n)[2]]
 
 
-if __name__ == '__main__':
+def main():
     total = 0
 
     for i in range(1, 1001):
         total += (len(n2w(i)) - n2w(i).count(' '))
 
-    print(total)
+    return total
 
 
-
+if __name__ == '__main__':
+    print(main())
