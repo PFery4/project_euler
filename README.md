@@ -4,7 +4,7 @@ This repository contains my answers to some problems presented within the projec
 
 Feel free to have a look, or blatantly steal anything you find here.
 
-##INSTRUCTIONS
+## INSTRUCTIONS
 
 execute these commands from within this directory:
 ```
