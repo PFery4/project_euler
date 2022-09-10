@@ -4,7 +4,9 @@ This script goes through all solutions.
 
 """
 
-import solutions
+from solutions import *
 
-print(solutions.__all__)
-
+if __name__ == "__main__":
+    print("Hello")
+    print(euler_problem_001.main())
+    print(euler_problem_002.main())
