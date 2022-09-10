@@ -8,7 +8,7 @@ copy-paste the numbers into a file called 'problem_13_lines.txt' inside the 'git
 """
 
 
-def main():
+def solution():
     with open('../gitignored/problem_13_lines.txt') as file:
         lines = file.readlines()
 
@@ -18,4 +18,4 @@ def main():
 
 
 if __name__ == '__main__':
-    print(main())
+    print(solution())

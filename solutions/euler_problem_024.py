@@ -20,11 +20,11 @@ def str_permutations(string):
     return l
 
 
-def main():
+def solution():
     for i, p in enumerate(str_permutations('0123456789')):
         if i == 999_999:
             return p
 
 
 if __name__ == '__main__':
-    print(main())
+    print(solution())

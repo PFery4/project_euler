@@ -5,7 +5,7 @@ https://projecteuler.net/problem=6
 """
 
 
-def main():
+def solution():
     sum_of_squares = 0
 
     for i in range(101):
@@ -15,4 +15,4 @@ def main():
 
 
 if __name__ == '__main__':
-    print(main())
+    print(solution())

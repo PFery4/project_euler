@@ -5,7 +5,7 @@ https://projecteuler.net/problem=25
 """
 
 
-def main():
+def solution():
     f_prev = 1
     f_curr = 1
 
@@ -21,4 +21,4 @@ def main():
 
 
 if __name__ == '__main__':
-    print(main())
+    print(solution())

@@ -5,7 +5,7 @@ https://projecteuler.net/problem=29
 """
 
 
-def main():
+def solution():
     the_list = []
 
     for a in range(2, 101):
@@ -16,4 +16,4 @@ def main():
 
 
 if __name__ == '__main__':
-    print(main())
+    print(solution())

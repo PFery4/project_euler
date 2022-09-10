@@ -9,7 +9,7 @@ def is_palindrome(string):
     return string == string[::-1]
 
 
-def main():
+def solution():
     total = 0
 
     for i in range(1000000):
@@ -20,4 +20,4 @@ def main():
 
 
 if __name__ == '__main__':
-    print(main())
+    print(solution())

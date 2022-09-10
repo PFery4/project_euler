@@ -22,7 +22,7 @@ def amicable_pair(number):
     return set(result)
 
 
-def main():
+def solution():
     allpairs = amicable_pair(10000)
 
     total = 0
@@ -34,4 +34,4 @@ def main():
 
 
 if __name__ == '__main__':
-    print(main())
+    print(solution())

@@ -7,7 +7,7 @@ https://projecteuler.net/problem=10
 from euler_problem_003 import is_prime
 
 
-def main():
+def solution():
     big_number = 2_000_000
 
     primes = [2, 3]
@@ -24,4 +24,4 @@ def main():
 
 
 if __name__ == '__main__':
-    print(main())
+    print(solution())

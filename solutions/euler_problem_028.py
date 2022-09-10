@@ -5,7 +5,7 @@ https://projecteuler.net/problem=28
 """
 
 
-def main():
+def solution():
     in_diag = [1]
 
     edge_length = 2
@@ -21,4 +21,4 @@ def main():
 
 
 if __name__ == '__main__':
-    print(main())
+    print(solution())

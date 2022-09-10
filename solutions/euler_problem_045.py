@@ -17,7 +17,7 @@ def hexagonal_number(n):
     return int(n*(2*n-1))
 
 
-def main():
+def solution():
     n_t = 285
     n_p = 165
     n_h = 144
@@ -47,4 +47,4 @@ def main():
 
 
 if __name__ == '__main__':
-    print(main())
+    print(solution())

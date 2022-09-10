@@ -65,7 +65,7 @@ def print_sudoku_grid(grid):
         print(str_line)
 
 
-def main():
+def solution():
     with open('../gitignored/p096_sudoku.txt') as file:
         lines = file.readlines()
 
@@ -79,4 +79,4 @@ def main():
 
 
 if __name__ == '__main__':
-    print(main())
+    print(solution())

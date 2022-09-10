@@ -8,7 +8,7 @@ save the 'names.txt' file in the 'gitignored' folder.
 """
 
 
-def main():
+def solution():
     with open('../gitignored/p022_names.txt') as file:
         names = file.readline()
 
@@ -29,4 +29,4 @@ def main():
 
 
 if __name__ == '__main__':
-    print(main())
+    print(solution())

@@ -9,7 +9,7 @@ def sum_power_digits(n, exp=5):
     return sum([int(i)**exp for i in str(n)])
 
 
-def main():
+def solution():
     nums = []
 
     # stopping condition is set to 1000000 because sum_power_digits(999999) < 999999
@@ -22,4 +22,4 @@ def main():
 
 
 if __name__ == '__main__':
-    print(main())
+    print(solution())

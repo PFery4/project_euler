@@ -5,7 +5,7 @@ https://projecteuler.net/problem=1
 """
 
 
-def main():
+def solution():
     sum_multiples = 0
 
     candidate_number = 1
@@ -20,4 +20,4 @@ def main():
 
 
 if __name__ == '__main__':
-    print(main())
+    print(solution())

@@ -15,7 +15,7 @@ def product(num_list):
     return prod
 
 
-def main():
+def solution():
     with open('../gitignored/problem_11_grid.txt') as file:
         grid = file.readlines()
 
@@ -69,4 +69,4 @@ def main():
 
 
 if __name__ == '__main__':
-    print(main())
+    print(solution())

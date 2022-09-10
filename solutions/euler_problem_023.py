@@ -12,7 +12,7 @@ def is_abundant(n):
     return sum(divisors[:-1]) > n
 
 
-def main():
+def solution():
     abundants = []
 
     for i in range(1, 28124):
@@ -37,4 +37,4 @@ def main():
 
 
 if __name__ == '__main__':
-    print(main())
+    print(solution())

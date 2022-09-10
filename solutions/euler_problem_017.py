@@ -39,7 +39,7 @@ def n2w(n):
                        number_to_word[separate_number(n)[2]]
 
 
-def main():
+def solution():
     total = 0
 
     for i in range(1, 1001):
@@ -49,4 +49,4 @@ def main():
 
 
 if __name__ == '__main__':
-    print(main())
+    print(solution())

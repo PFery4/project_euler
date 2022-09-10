@@ -5,7 +5,7 @@ https://projecteuler.net/problem=2
 """
 
 
-def main():
+def solution():
     sum_even_fibonacci = 2
 
     fibo_prev = 1
@@ -25,4 +25,4 @@ def main():
 
 
 if __name__ == '__main__':
-    print(main())
+    print(solution())

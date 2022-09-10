@@ -19,7 +19,7 @@ def find_divisors(n):
     return sorted(list(dict.fromkeys(divisors)))
 
 
-def main():
+def solution():
     num = 1
     triang = triangle_number(num)
     while len(find_divisors(triang)) < 500:
@@ -30,4 +30,4 @@ def main():
 
 
 if __name__ == '__main__':
-    print(main())
+    print(solution())

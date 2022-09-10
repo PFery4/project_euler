@@ -11,7 +11,7 @@ def sum_factorials(n):
 	return sum([factorial(int(i)) for i in str(n)])
 
 
-def main():
+def solution():
 	total = 0
 
 	for x in range(10, 10000000):
@@ -22,4 +22,4 @@ def main():
 
 
 if __name__ == "__main__":
-	print(main())
+	print(solution())

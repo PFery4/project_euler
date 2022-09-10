@@ -5,7 +5,7 @@ https://projecteuler.net/problem=40
 """
 
 
-def main():
+def solution():
     integer = 0
     decimal = "0."
 
@@ -21,4 +21,4 @@ def main():
 
 
 if __name__ == '__main__':
-    print(main())
+    print(solution())

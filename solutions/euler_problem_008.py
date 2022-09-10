@@ -8,7 +8,7 @@ Copy the 1000 digit number, the same way it is presented, into a file in the 'gi
 """
 
 
-def main():
+def solution():
     with open('../gitignored/problem_8_number.txt') as file:
         lines = file.readlines()
 
@@ -34,4 +34,4 @@ def main():
 
 
 if __name__ == '__main__':
-    print(main())
+    print(solution())

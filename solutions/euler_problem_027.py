@@ -11,7 +11,7 @@ def quadratic(a, b, n):
     return n*n + a*n + b
 
 
-def main():
+def solution():
     # b must be prime
     b_list = []
     center_candidate = 0
@@ -39,4 +39,4 @@ def main():
 
 
 if __name__ == '__main__':
-    print(main())
+    print(solution())

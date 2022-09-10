@@ -7,7 +7,7 @@ https://projecteuler.net/problem=7
 import euler_problem_003
 
 
-def main():
+def solution():
     primes_list = [2, 3]
 
     center_candidate = 0  # primes are 1 apart from center_candidate
@@ -26,4 +26,4 @@ def main():
 
 
 if __name__ == '__main__':
-    print(main())
+    print(solution())

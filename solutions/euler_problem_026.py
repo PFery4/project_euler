@@ -34,7 +34,7 @@ def length_repeat(decimal_rep):
     return len(decimal_rep) - decimal_rep.index('(') - 2
 
 
-def main():
+def solution():
     value_of_d = 0
     longest_repeat = 0
 
@@ -48,4 +48,4 @@ def main():
 
 
 if __name__ == '__main__':
-    print(main())
+    print(solution())

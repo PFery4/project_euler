@@ -8,7 +8,7 @@ copy-paste the pyramid into a file called 'problem_18_pyramid.txt' inside the 'g
 """
 
 
-def main():
+def solution():
     with open('../gitignored/problem_18_pyramid.txt') as file:
         lines = file.readlines()
 
@@ -24,4 +24,4 @@ def main():
 
 
 if __name__ == '__main__':
-    print(main())
+    print(solution())

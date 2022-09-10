@@ -5,7 +5,7 @@ https://projecteuler.net/problem=5
 """
 
 
-def main():
+def solution():
     check_divisible_by = list(range(11, 21))
 
     candidate = 2520
@@ -17,4 +17,4 @@ def main():
 
 
 if __name__ == '__main__':
-    print(main())
+    print(solution())

@@ -26,7 +26,7 @@ def isleap(year):
         return False
 
 
-def main():
+def solution():
     current_day = {'weekday': 'Monday', 'month': 'January', 'day': 1, 'year': 1900}
 
     sundays1st = 0
@@ -51,4 +51,4 @@ def main():
 
 
 if __name__ == '__main__':
-    print(main())
+    print(solution())

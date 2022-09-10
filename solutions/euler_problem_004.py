@@ -9,7 +9,7 @@ def is_palindrome(n):
     return str(n) == str(n)[::-1]
 
 
-def main():
+def solution():
     number_1 = 999
 
     largest_palindrome = 0
@@ -27,4 +27,4 @@ def main():
 
 
 if __name__ == '__main__':
-    print(main())
+    print(solution())

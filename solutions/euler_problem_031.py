@@ -5,7 +5,7 @@ https://projecteuler.net/problem=31
 """
 
 
-def main():
+def solution():
     currency_elements = [1, 2, 5, 10, 20, 50, 100, 200]  # in unit pence, [p]
 
     total = 200
@@ -21,4 +21,4 @@ def main():
 
 
 if __name__ == '__main__':
-    print(main())
+    print(solution())

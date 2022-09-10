@@ -11,7 +11,7 @@ def next_collatz(n):
     return 3 * n + 1
 
 
-def main():
+def solution():
     starting_number = 13
     sequence = [starting_number]
 
@@ -33,4 +33,4 @@ def main():
 
 
 if __name__ == '__main__':
-    print(main())
+    print(solution())

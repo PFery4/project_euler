@@ -20,7 +20,7 @@ def is_prime(n):
     return True
 
 
-def main():
+def solution():
     target_number = 600851475143
 
     candidate = 5
@@ -37,4 +37,4 @@ def main():
 
 
 if __name__ == '__main__':
-    print(main())
+    print(solution())
