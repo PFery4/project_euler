@@ -4,13 +4,7 @@ This script goes through all solutions.
 
 """
 
-
 import solutions
 
+print(solutions.__all__)
 
-def main():
-    print(dir(solutions))
-
-
-if __name__ == '__main__':
-    main()

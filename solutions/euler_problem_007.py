@@ -4,7 +4,7 @@ https://projecteuler.net/problem=7
 
 """
 
-from euler_problem_003 import is_prime
+import euler_problem_003
 
 
 def main():
@@ -14,10 +14,10 @@ def main():
 
     while len(primes_list) < 10001:
 
-        if is_prime(center_candidate - 1):
+        if euler_problem_003.is_prime(center_candidate - 1):
             primes_list.append(center_candidate - 1)
 
-        if is_prime(center_candidate + 1):
+        if euler_problem_003.is_prime(center_candidate + 1):
             primes_list.append(center_candidate + 1)
 
         center_candidate += 6
