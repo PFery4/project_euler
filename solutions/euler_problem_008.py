@@ -7,9 +7,14 @@ Copy the 1000 digit number, the same way it is presented, into a file in the 'gi
 
 """
 
+import os
 
 def solution():
-    with open('../gitignored/problem_8_number.txt') as file:
+
+    filepath = os.path.abspath(os.path.join(os.path.basename(os.path.dirname(__file__)), '../gitignored'))
+    filename = 'problem_8_number.txt'
+
+    with open(os.path.join(filepath, filename)) as file:
         lines = file.readlines()
 
     lines = [line.replace('\n', '') for line in lines]

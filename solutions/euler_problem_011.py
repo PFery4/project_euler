@@ -7,6 +7,7 @@ Copy the grid, as it is presented in the problem, into a file in the 'gitignored
 
 """
 
+import os
 
 def product(num_list):
     prod = 1
@@ -16,7 +17,11 @@ def product(num_list):
 
 
 def solution():
-    with open('../gitignored/problem_11_grid.txt') as file:
+
+    filepath = os.path.abspath(os.path.join(os.path.basename(os.path.dirname(__file__)), '../gitignored'))
+    filename = 'problem_11_grid.txt'
+
+    with open(os.path.join(filepath, filename)) as file:
         grid = file.readlines()
 
     grid = [line.replace('\n', '').split(' ') for line in grid]

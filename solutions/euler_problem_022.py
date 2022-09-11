@@ -7,9 +7,14 @@ save the 'names.txt' file in the 'gitignored' folder.
 
 """
 
+import os
 
 def solution():
-    with open('../gitignored/p022_names.txt') as file:
+
+    filepath = os.path.abspath(os.path.join(os.path.basename(os.path.dirname(__file__)), '../gitignored'))
+    filename = 'p022_names.txt'
+
+    with open(os.path.join(filepath, filename)) as file:
         names = file.readline()
 
     names = names.split(',')

@@ -7,6 +7,7 @@ download and save the file of the problem in the 'gitignored' folder, as 'p096_s
 
 """
 
+import os
 
 def make_sudoku_grid(line_block):
     """
@@ -66,7 +67,11 @@ def print_sudoku_grid(grid):
 
 
 def solution():
-    with open('../gitignored/p096_sudoku.txt') as file:
+
+    filepath = os.path.abspath(os.path.join(os.path.basename(os.path.dirname(__file__)), '../gitignored'))
+    filename = 'p096_sudoku.txt'
+
+    with open(os.path.join(filepath, filename)) as file:
         lines = file.readlines()
 
     # for i in range(len(lines)//10):
@@ -75,7 +80,7 @@ def solution():
     grid = make_sudoku_grid(lines[:10])
 
     print_sudoku_grid(grid)
-    return
+    return "WIP"
 
 
 if __name__ == '__main__':
