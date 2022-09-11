@@ -6,13 +6,6 @@ https://projecteuler.net/problem=32
 
 import itertools
 
-def process_tupl(num_tupl):
-    """
-    takes the num_tupl (a, b, c, d, e, f, g, h, i)
-    returns the three ints: ab, cde, fghi
-    """
-    return int("".join(num_tupl[:2])), int("".join(num_tupl[2:5])), int("".join(num_tupl[5:]))
-
 def solution():
     products = []
     for perm in itertools.permutations('123456789'):
