@@ -1,6 +1,6 @@
 """
 
-https://projecteuler.net/problem=35
+https://projecteuler.net/problem=36
 
 """
 
