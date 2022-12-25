@@ -24,5 +24,5 @@ if __name__ == "__main__":
         time_0 = time.perf_counter_ns()
         solution = eval(f"{script}.solution()")
         duration = (time.perf_counter_ns() - time_0) / 1e6
-        print(f"{script[-3:].ljust(colwidths[0])}|{str(solution).ljust(colwidths[1])}|{str(duration).ljust(colwidths[2])}")
+        print(f"{script[-3:].ljust(colwidths[0])}|{str(solution).ljust(colwidths[1])}|{str(duration).rjust(12)}")
 
