@@ -24,23 +24,29 @@ def is_pandigit(n):
 
 
 def solution():
-    print(concat_product(192, 3))
-    print(is_pandigit(concat_product(192, 3)))
     pandigits = []
 
-    for n in range(2, 10):
-        pandigit_found = False
-        candidate_k = 1
-        while not pandigit_found:
-            proposal = concat_product(candidate_k, n)
+    candidate_k = 1
+    candidate_n = 2
+    
+    proposal = concat_product(candidate_k, candidate_n)
+    
+    while candidate_n < 10:
+        while len(str(proposal)) < 10:
+            
+            # print(candidate_k, candidate_n)
+            
+            candidate_k += 1
+            proposal = concat_product(candidate_k, candidate_n)
             if is_pandigit(proposal):
                 pandigits.append(proposal)
-            candidate_k += 1
+        candidate_n += 1
+            
+    # print(pandigits)
 
-        print(n)
-
-    return "WIP"
+    return max(pandigits)
 
 
 if __name__ == "__main__":
     print(solution())
+
