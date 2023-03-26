@@ -9,7 +9,7 @@ from math import sqrt
 
 
 def P(f, r):
-    
+    return "WIP"
 
 
 def solution():
