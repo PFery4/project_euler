@@ -19,7 +19,7 @@ def get_triangles(p):
         ab = p - c
         for a in range(1, ab//2):
             b = ab - a
-            print(a, b, c)
+            # print(a, b, c)
 
             if a * a + b * b == c * c:
                 triangles.append((a, b, c))
