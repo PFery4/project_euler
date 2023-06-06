@@ -7,8 +7,8 @@ DIR="$PWD/solutions"
 if [[ -z "${PYTHONPATH}" ]]; then
 	export PYTHONPATH=$DIR
 else
-	if [[ $PYTHONPATH == *$DIR* ]]; then
-		export PYTHONPATH = "$PYTHONPATH:$DIR"
+	if [[ ! $PYTHONPATH == *$DIR* ]]; then
+		export PYTHONPATH="$PYTHONPATH:$DIR"
 	fi
 fi
 
