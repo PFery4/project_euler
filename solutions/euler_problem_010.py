@@ -1,18 +1,14 @@
 """
-
 https://projecteuler.net/problem=10
-
 """
 
-from euler_problem_003 import is_prime
+from utils.is_prime import is_prime
 
 
 def solution():
-    big_number = 2_000_000
-
     primes = [2, 3]
 
-    for i in range(6, big_number, 6):
+    for i in range(6, 2_000_000, 6):
 
         if is_prime(i - 1):
             primes.append(i - 1)

@@ -1,11 +1,9 @@
 """
-
 https://projecteuler.net/problem=4
-
 """
 
 
-def is_palindrome(n):
+def is_palindrome(n: int) -> bool:
     return str(n) == str(n)[::-1]
 
 

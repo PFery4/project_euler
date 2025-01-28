@@ -1,7 +1,5 @@
 """
-
 https://projecteuler.net/problem=9
-
 """
 
 
@@ -33,6 +31,4 @@ def solution():
 
 
 if __name__ == '__main__':
-
     print(solution())
-
