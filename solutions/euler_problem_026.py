@@ -1,11 +1,9 @@
 """
-
 https://projecteuler.net/problem=26
-
 """
 
 
-def decimal_representation(n, d):
+def decimal_representation(n: int, d: int) -> str:
     div, remainder = divmod(n, d)
     first_div = str(div) + '.'
 
@@ -28,7 +26,7 @@ def decimal_representation(n, d):
     return first_div + decimals
 
 
-def length_repeat(decimal_rep):
+def length_repeat(decimal_rep: str) -> int:
     if "(" not in decimal_rep:
         return 0
     return len(decimal_rep) - decimal_rep.index('(') - 2
@@ -43,7 +41,6 @@ def solution():
         if length_repeat(decimal) > longest_repeat:
             longest_repeat = length_repeat(decimal)
             value_of_d = d
-
     return value_of_d
 
 

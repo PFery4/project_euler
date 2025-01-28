@@ -1,10 +1,8 @@
 """
-
 https://projecteuler.net/problem=27
-
 """
 
-from euler_problem_003 import is_prime
+from utils.is_prime import is_prime
 
 
 def quadratic(a, b, n):

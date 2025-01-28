@@ -1,20 +1,21 @@
 """
-
 https://projecteuler.net/problem=22
-
-instructions:
-save the 'names.txt' file in the 'gitignored' folder.
-
 """
 
 import os
+from urllib import request
+
+EULER_LINK = "https://projecteuler.net/resources/documents/0022_names.txt"
+INPUT_FILE = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data', '0022_names.txt'))
+
+if not os.path.exists(INPUT_FILE):
+    request.urlretrieve(EULER_LINK, INPUT_FILE)
+assert os.path.exists(INPUT_FILE)
+
 
 def solution():
 
-    filepath = os.path.abspath(os.path.join(os.path.basename(os.path.dirname(__file__)), '../gitignored'))
-    filename = 'p022_names.txt'
-
-    with open(os.path.join(filepath, filename)) as file:
+    with open(INPUT_FILE) as file:
         names = file.readline()
 
     names = names.split(',')

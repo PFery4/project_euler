@@ -1,10 +1,8 @@
 """
-
 https://projecteuler.net/problem=23
-
 """
 
-from euler_problem_012 import find_divisors
+from utils.find_divisors import find_divisors
 
 
 def is_abundant(n):

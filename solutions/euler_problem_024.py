@@ -1,23 +1,23 @@
 """
-
 https://projecteuler.net/problem=24
-
 """
 
-def str_permutations(string):
+from typing import List
+
+
+def str_permutations(string: str) -> List[str]:
     if len(string) == 0:
         return []
     if len(string) == 1:
         return [string]
 
-    l = []
+    lst = []
     for i in range(len(string)):
         m = string[i]
         rem_str = string[:i] + string[i+1:]
-
         for p in str_permutations(rem_str):
-            l.append(m + p)
-    return l
+            lst.append(m + p)
+    return lst
 
 
 def solution():

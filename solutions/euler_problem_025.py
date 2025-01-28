@@ -1,7 +1,5 @@
 """
-
 https://projecteuler.net/problem=25
-
 """
 
 
@@ -16,7 +14,6 @@ def solution():
         f_prev = f_curr
         f_curr = f_next
         i_curr += 1
-
     return i_curr
 
 
