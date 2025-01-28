@@ -1,19 +1,17 @@
 """
-
 https://projecteuler.net/problem=45
-
 """
 
 
-def triangle_number(n):
+def triangle_number(n: int) -> int:
     return int(n*(n+1)/2)
 
 
-def pentagonal_number(n):
+def pentagonal_number(n: int) -> int:
     return int(n*(3*n-1)/2)
 
 
-def hexagonal_number(n):
+def hexagonal_number(n: int) -> int:
     return int(n*(2*n-1))
 
 
@@ -42,7 +40,6 @@ def solution():
             P = pentagonal_number(n_p)
 
     assert T == P == H
-
     return T
 
 
