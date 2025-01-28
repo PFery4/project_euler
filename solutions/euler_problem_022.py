@@ -4,10 +4,12 @@ https://projecteuler.net/problem=22
 
 import os
 from urllib import request
+from utils.data_directory import DATA_DIRECTORY
 
 EULER_LINK = "https://projecteuler.net/resources/documents/0022_names.txt"
-INPUT_FILE = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data', '0022_names.txt'))
+INPUT_FILE = os.path.join(DATA_DIRECTORY, '0022_names.txt')
 
+os.makedirs(DATA_DIRECTORY, exist_ok=True)
 if not os.path.exists(INPUT_FILE):
     request.urlretrieve(EULER_LINK, INPUT_FILE)
 assert os.path.exists(INPUT_FILE)
