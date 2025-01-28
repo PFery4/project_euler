@@ -1,19 +1,16 @@
 """
-
 https://projecteuler.net/problem=33
-
 """
 
-def solution():
 
+def solution():
     numbers = []
     
     for tens in range(1,10):
         for units in range(1,10):
             number = int(f"{tens}{units}")
             numbers.append(number)
-    
-    
+
     nums = []
     denoms = []
     
@@ -26,7 +23,6 @@ def solution():
                 continue
             
             if abs(int(f"{num_tens}{denom_tens}")/denom - num_tens/denom_digits) < 1e-10:
-                # print(f"{num_tens}{denom_tens}/{denom} = {num_tens}/{denom_digits}")
                 nums.append(num_tens)
                 denoms.append(denom_digits)
     
@@ -42,6 +38,6 @@ def solution():
     
     return prod_denom // prod_num
 
+
 if __name__ == "__main__":
     print(solution())
-

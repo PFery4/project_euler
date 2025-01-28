@@ -1,13 +1,11 @@
 """
-
 https://projecteuler.net/problem=35
-
 """
 
-from euler_problem_003 import is_prime
+from utils.is_prime import is_prime
 
 
-def cycle(number):
+def cycle(number: int) -> int:
     """
     provides the next cycle of a number
     
@@ -15,21 +13,17 @@ def cycle(number):
     """
     return int(str(number)[1:] + str(number)[0])
 
-def solution():
 
+def solution():
     circular_primes = [2, 3, 5, 7, 11, 13, 17, 31, 37, 71, 73, 79, 97]
 
     # circular primes can only be made up of 1, 3, 7, and 9 from here on out
     useful_integers = [1, 3, 7, 9]
 
-    prime_candidates = []
-
-    for candidate in range(100, 1000000): # replace with 1million
-    
+    for candidate in range(100, 1_000_000):
         if candidate % 10 not in useful_integers or "0" in str(candidate):
             continue
-        # print(candidate)
-        
+
         rejected = not is_prime(candidate)
         cycles = []
         shift = candidate
@@ -45,8 +39,6 @@ def solution():
             circular_primes.extend(cycles)
     
     circular_primes = sorted(list(set(circular_primes)))
-
-    # print(circular_primes)
     return len(circular_primes)
 
 

@@ -1,7 +1,5 @@
 """
-
 https://projecteuler.net/problem=40
-
 """
 
 
@@ -16,7 +14,6 @@ def solution():
     result = 1
     for i in range(7):
         result *= int(decimal[10 ** i + 1])  # again, accounting for the characters at start
-
     return result
 
 
