@@ -11,3 +11,6 @@ wheels/
 
 # PyCharm's .idea directory
 .idea
+
+# data directory
+data
