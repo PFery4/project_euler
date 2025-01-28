@@ -1,20 +1,15 @@
 """
-
 https://projecteuler.net/problem=14
-
 """
 
 
-def next_collatz(n):
+def next_collatz(n: int) -> int:
     if n % 2 == 0:
         return n//2
     return 3 * n + 1
 
 
 def solution():
-    starting_number = 13
-    sequence = [starting_number]
-
     longest_starting_number = 0
     longest_sequence = []
 
