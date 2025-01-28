@@ -1,11 +1,9 @@
 """
-
 https://projecteuler.net/problem=41
-
 """
 
 
-from euler_problem_003 import is_prime
+from utils.is_prime import is_prime
 from itertools import permutations
 
 
@@ -19,6 +17,6 @@ def solution():
                 return candidate
         p.pop(0)
 
+
 if __name__ == '__main__':
     print(solution())
-

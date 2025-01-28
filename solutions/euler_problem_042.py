@@ -1,20 +1,28 @@
 """
-
 https://projecteuler.net/problem=42
-
 """
 
 import os
+from urllib import request
+from utils.data_directory import DATA_DIRECTORY
 
-def triang(n):
+EULER_LINK = "https://projecteuler.net/resources/documents/0042_words.txt"
+INPUT_FILE = os.path.join(DATA_DIRECTORY, "0042_words.txt")
+
+if not os.path.exists(INPUT_FILE):
+    request.urlretrieve(EULER_LINK, INPUT_FILE)
+assert os.path.exists(INPUT_FILE)
+
+
+def triang(n: int) -> int:
     return n * (n+1) // 2
 
 
-def num_from(word):
-    return sum([ord(l)-ord("A")+1 for l in word])
+def num_from(word: str) -> int:
+    return sum([ord(char)-ord("A")+1 for char in word])
 
 
-def is_triang(num):
+def is_triang(num: int) -> bool:
     n = 1
     tri = triang(n)
     while tri <= num:
@@ -26,11 +34,7 @@ def is_triang(num):
 
 
 def solution():
-
-    filepath = os.path.abspath(os.path.join(os.path.basename(os.path.dirname(__file__)), '../gitignored'))
-    filename = 'p042_words.txt'
-
-    with open(os.path.join(filepath, filename)) as file:
+    with open(INPUT_FILE) as file:
         words = file.readline()
     
     words = words.split(',')
@@ -39,10 +43,8 @@ def solution():
     total = 0
     for word in words:
         total += is_triang(num_from(word))
-        
     return total
 
 
 if __name__ == '__main__':
     print(solution())
-
