@@ -3,20 +3,15 @@ https://projecteuler.net/problem=22
 """
 
 import os
-from urllib import request
 from utils.data_directory import DATA_DIRECTORY
+from utils.download_euler_file import download_file
 
-EULER_LINK = "https://projecteuler.net/resources/documents/0022_names.txt"
-INPUT_FILE = os.path.join(DATA_DIRECTORY, '0022_names.txt')
-
-if not os.path.exists(INPUT_FILE):
-    request.urlretrieve(EULER_LINK, INPUT_FILE)
-assert os.path.exists(INPUT_FILE)
+FILE_NAME = '0022_names.txt'
+download_file(FILE_NAME)
 
 
 def solution():
-
-    with open(INPUT_FILE) as file:
+    with open(os.path.join(DATA_DIRECTORY, FILE_NAME)) as file:
         names = file.readline()
 
     names = names.split(',')
