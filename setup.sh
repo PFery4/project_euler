@@ -2,7 +2,7 @@
 
 
 #This directory
-DIR="$PWD/solutions"
+DIR=$PWD
 
 if [[ -z "${PYTHONPATH}" ]]; then
 	export PYTHONPATH=$DIR
