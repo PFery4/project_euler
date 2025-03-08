@@ -2,7 +2,7 @@
 https://projecteuler.net/problem=7
 """
 
-from utils.is_prime import is_prime
+from utils.prime_numbers import is_prime
 
 
 def solution():
